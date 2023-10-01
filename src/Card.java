@@ -3,7 +3,7 @@ public class Card {
     final String name;  //instancia do nome da carta
     private int valor;  //instancia do valor da carta -> private pq pode ser mudado (no caso dos as)
 
-    public Card(String naipe, String name, int valor){
+    public Card(String name, String naipe, int valor){
 
         this.naipe = naipe;
         this.name = name;
@@ -12,7 +12,7 @@ public class Card {
     }
 
     public String toString(){
-        return naipe + "de" + name;
+        return name + " de " + naipe;
     }
 
     public String getName() {
@@ -34,4 +34,5 @@ public class Card {
 
 
     //precisa criar uma funcao que muda o valor dos asesz
+    //ja ta feita no deckofcards
 }

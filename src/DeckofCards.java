@@ -17,7 +17,7 @@ public class DeckofCards {  //classe deck of cards usa o objeto de cards pra cri
 
             if(count%13>8){
                 temp = 10;}else{    //setando o valor de valete, dama e rei como 10
-                temp = (count%13) + 1;    //todo resto recebe seu valor normal
+                temp = (count%13) + 1;    //tdo resto recebe seu valor normal
             }
             deck[count]=new Card(faces[count%13],suits[count/13],temp); //cria um array de cartas mandando os valores de nome, naipe e valor
         }
